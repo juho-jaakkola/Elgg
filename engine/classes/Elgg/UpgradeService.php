@@ -91,7 +91,6 @@ class UpgradeService {
 			$this->processUpgrades();
 		}
 
-		$this->events->trigger('upgrade', 'system', null);
 		elgg_flush_caches();
 
 		$this->mutex->unlock('upgrade');

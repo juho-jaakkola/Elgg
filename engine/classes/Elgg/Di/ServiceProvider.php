@@ -71,6 +71,8 @@ use Zend\Mail\Transport\TransportInterface as Mailer;
  * @property-read \Elgg\Timer                              $timer
  * @property-read \Elgg\I18n\Translator                    $translator
  * @property-read \Elgg\UpgradeService                     $upgrades
+ * @property-read \Elgg\Upgrade\Locator                    $upgradeLocator
+ * @property-read \Elgg\Upgrader                           $batchUpgrader
  * @property-read \Elgg\UploadService                      $uploads
  * @property-read \Elgg\UserCapabilities                   $userCapabilities
  * @property-read \Elgg\Database\UsersTable                $usersTable
@@ -141,6 +143,10 @@ class ServiceProvider extends \Elgg\Di\DiContainer {
 				$boot->setTimer($c->timer);
 			}
 			return $boot;
+		});
+
+		$this->setFactory('batchUpgrader', function(ServiceProvider $c) {
+			return new \Elgg\BatchUpgrader($config);
 		});
 
 		$this->setValue('config', $config);
@@ -391,6 +397,11 @@ class ServiceProvider extends \Elgg\Di\DiContainer {
 		});
 
 		$this->setClassName('usersTable', \Elgg\Database\UsersTable::class);
+
+		$this->setFactory('upgradeLocator', function(ServiceProvider $c) {
+			return new \Elgg\Upgrade\Locator($c->configTable, $c->plugins,
+				$c->logger, $c->privateSettings, $this->hooks);
+		});
 
 		$this->setFactory('views', function(ServiceProvider $c) {
 			return new \Elgg\ViewsService($c->hooks, $c->logger);
