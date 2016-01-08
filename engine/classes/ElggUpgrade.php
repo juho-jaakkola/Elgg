@@ -2,16 +2,11 @@
 /**
  * Upgrade object for upgrades that need to be tracked
  * and listed in the admin area.
- *
- * @todo Expand for all upgrades to be \ElggUpgrade subclasses.
  */
 
 /**
  * Represents an upgrade that runs outside of the upgrade.php script.
  * These are listed in admin/upgrades and allow for ajax upgrades.
- *
- * @note The "upgrade_url" private setting originally stored the full URL, but
- *       was changed to hold the relative path from the site URL for #6838
  *
  * @package Elgg.Admin
  * @access private
@@ -20,16 +15,8 @@ class ElggUpgrade extends \ElggObject {
 	private $requiredProperties = array(
 		'title',
 		'description',
-		'upgrade_url',
+		'class',
 	);
-
-	/**
-	 * Do not use.
-	 *
-	 * @access private
-	 * @var callable
-	 */
-	public $_callable_egefps = 'elgg_get_entities_from_private_settings';
 
 	/**
 	 * Set subtype to upgrade
@@ -69,33 +56,27 @@ class ElggUpgrade extends \ElggObject {
 	}
 
 	/**
-	 * Sets an upgrade URL path
+	 * Set the upgrade class name
 	 *
-	 * @param string $path Set the URL path (without site URL) for the upgrade page
+	 * @param string $class The class that takes care of the upgrade
 	 * @return void
 	 * @throws InvalidArgumentException
 	 */
-	public function setPath($path) {
-		if (!$path) {
-			throw new InvalidArgumentException('Invalid value for URL path.');
+	public function setClass($class) {
+		if (!$class) {
+			throw new InvalidArgumentException('Invalid value for upgrade class.');
 		}
 
-		$path = ltrim($path, '/');
-
-		if ($this->getUpgradeFromPath($path)) {
-			throw new InvalidArgumentException('Upgrade URL paths must be unique.');
-		}
-
-		$this->upgrade_url = $path;
+		$this->class = $class;
 	}
 
 	/**
-	 * Returns a normalized URL for the upgrade page.
+	 * Get the upgrade class name
 	 *
-	 * @return string
+	 * @return string The class that takes care of the upgrade
 	 */
-	public function getURL() {
-		return elgg_normalize_url($this->upgrade_url);
+	public function getClass() {
+		return $this->class;
 	}
 
 	/**
@@ -167,44 +148,5 @@ class ElggUpgrade extends \ElggObject {
 		}
 
 		return $this->getPrivateSetting($name);
-	}
-
-	/**
-	 * Find an ElggUpgrade object by the unique URL path
-	 *
-	 * @param string $path The Upgrade URL path (after site URL)
-	 * @return ElggUpgrade|false
-	 */
-	public function getUpgradeFromPath($path) {
-		$path = ltrim($path, '/');
-
-		if (!$path) {
-			return false;
-		}
-
-		// test for full URL values (used at 1.9.0)
-		$options = array(
-			'type' => 'object',
-			'subtype' => 'elgg_upgrade',
-			'private_setting_name' => 'upgrade_url',
-			'private_setting_value' => elgg_normalize_url($path),
-		);
-		$upgrades = call_user_func($this->_callable_egefps, $options);
-		/* @var ElggUpgrade[] $upgrades */
-
-		if ($upgrades) {
-			// replace URL with path (we can't use setPath due to recursion)
-			$upgrades[0]->upgrade_url = $path;
-			return $upgrades[0];
-		}
-
-		$options['private_setting_value'] = $path;
-		$upgrades = call_user_func($this->_callable_egefps, $options);
-
-		if ($upgrades) {
-			return $upgrades[0];
-		}
-
-		return false;
 	}
 }

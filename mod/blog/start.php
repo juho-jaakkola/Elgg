@@ -71,6 +71,12 @@ function blog_init() {
 
 	// allow to be liked
 	elgg_register_plugin_hook_handler('likes:is_likable', 'object:blog', 'Elgg\Values::getTrue');
+
+	elgg_register_plugin_hook_handler('register', 'upgrade', function($hook, $type, $upgrades, $params) {
+		$upgrades[] = '\Elgg\Blog\Upgrades\BlogUpgrade20160115';
+
+		return $upgrades;
+	});
 }
 
 /**
@@ -108,35 +114,35 @@ function blog_page_handler($page) {
 	switch ($page_type) {
 		case 'owner':
 			$resource_vars['username'] = elgg_extract(1, $page);
-			
+
 			echo elgg_view_resource('blog/owner', $resource_vars);
 			break;
 		case 'friends':
 			$resource_vars['username'] = elgg_extract(1, $page);
-			
+
 			echo elgg_view_resource('blog/friends', $resource_vars);
 			break;
 		case 'archive':
 			$resource_vars['username'] = elgg_extract(1, $page);
 			$resource_vars['lower'] = elgg_extract(2, $page);
 			$resource_vars['upper'] = elgg_extract(3, $page);
-			
+
 			echo elgg_view_resource('blog/archive', $resource_vars);
 			break;
 		case 'view':
 			$resource_vars['guid'] = elgg_extract(1, $page);
-			
+
 			echo elgg_view_resource('blog/view', $resource_vars);
 			break;
 		case 'add':
 			$resource_vars['guid'] = elgg_extract(1, $page);
-			
+
 			echo elgg_view_resource('blog/add', $resource_vars);
 			break;
 		case 'edit':
 			$resource_vars['guid'] = elgg_extract(1, $page);
 			$resource_vars['revision'] = elgg_extract(2, $page);
-			
+
 			echo elgg_view_resource('blog/edit', $resource_vars);
 			break;
 		case 'group':
@@ -144,7 +150,7 @@ function blog_page_handler($page) {
 			$resource_vars['subpage'] = elgg_extract(2, $page);
 			$resource_vars['lower'] = elgg_extract(3, $page);
 			$resource_vars['upper'] = elgg_extract(4, $page);
-			
+
 			echo elgg_view_resource('blog/group', $resource_vars);
 			break;
 		case 'all':

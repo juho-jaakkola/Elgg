@@ -10,6 +10,8 @@ $upgrades = elgg_get_entities_from_private_settings(array(
 	'private_setting_value' => false
 ));
 
+elgg_register_title_button('upgrade', 'run');
+
 if (!$upgrades) {
 	echo elgg_echo('admin:upgrades:none');
 } else {

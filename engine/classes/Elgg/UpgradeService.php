@@ -41,12 +41,13 @@ class UpgradeService {
 	/**
 	 * Constructor
 	 *
-	 * @param \Elgg\i18n\Translator    $translator Translation service
-	 * @param \Elgg\EventsService      $events     Events service
-	 * @param \Elgg\PluginHooksService $hooks      Plugin hook service
-	 * @param \Elgg\Database\Datalist  $datalist   Datalist table
-	 * @param \Elgg\Logger             $logger     Logger
-	 * @param \Elgg\Database\Mutex     $mutex      Database mutex service
+	 * @param \Elgg\i18n\Translator               $translator      Translation service
+	 * @param \Elgg\EventsService                 $events          Events service
+	 * @param \Elgg\PluginHooksService            $hooks           Plugin hook service
+	 * @param \Elgg\Database\Datalist             $datalist        Datalist table
+	 * @param \Elgg\Logger                        $logger          Logger
+	 * @param \Elgg\Database\Mutex                $mutex           Database mutex service
+	 * @param \Elgg\Database\PrivateSettingsTable $privateSettings Private settings table
 	 */
 	public function __construct(
 			\Elgg\i18n\Translator $translator,
@@ -54,12 +55,78 @@ class UpgradeService {
 			\Elgg\PluginHooksService $hooks,
 			\Elgg\Database\Datalist $datalist,
 			\Elgg\Logger $logger,
-			\Elgg\Database\Mutex $mutex) {
+			\Elgg\Database\Mutex $mutex,
+			\Elgg\Database\PrivateSettingsTable $privateSettings) {
 		$this->translator = $translator;
 		$this->events = $events;
 		$this->hooks = $hooks;
 		$this->datalist = $datalist;
+		$this->logger = $logger;
 		$this->mutex = $mutex;
+		$this->privateSettings = $privateSettings;
+	}
+
+	/**
+	 * Check whether there are upgrades that need to be run
+	 *
+	 * @return int $count Amount of pending upgrades
+	 */
+	public function check() {
+		$upgrades = $this->hooks->trigger('register', 'upgrade');
+
+		$count = 0;
+		foreach ($upgrades as $class_name) {
+			if ($this->isProcessed($class_name)) {
+				continue;
+			}
+
+			if (!$this->isValidUpgrade($class_name)) {
+				$this->logger->warn($this->translator->translate('upgrade:error:invalid_upgrade_class'));
+				continue;
+			}
+
+			$upgrade = new \ElggUpgrade;
+			$upgrade->title = "{$class_name}:title";
+			$upgrade->description = "{$class_name}:desc";
+			$upgrade->class = $class_name;
+			$upgrade->save();
+
+			$count++;
+		}
+
+		return $count;
+	}
+
+	/**
+	 * Check whether the upgrade has already been run
+	 *
+	 * @param string $name Unique name of the upgrade
+	 * @return boolean
+	 */
+	private function isProcessed($name) {
+		// TODO
+		return false;
+	}
+
+	/**
+	 * Check whether the upgrade is valid
+	 *
+	 * @param string $class_name
+	 */
+	private function isValidUpgrade($class_name) {
+		if (!class_exists($class_name)) {
+			register_error("Class $class_name does not exist.");
+			return false;
+		}
+
+		$instance = new $class_name;
+
+		if (!$instance instanceof \Elgg\Upgrade) {
+			register_error("Class $class_name is not a valid instance of \Elgg\Upgrade.");
+			return false;
+		}
+
+		return true;
 	}
 
 	/**
@@ -97,6 +164,22 @@ class UpgradeService {
 		$this->mutex->unlock('upgrade');
 
 		return $result;
+	}
+
+	/**
+	 * Get all pending upgrades
+	 *
+	 * @return ElggUpgrade[]
+	 */
+	public function getPendingUpgrades() {
+		return $this->privateSettings->getEntities(array(
+			'type' => 'object',
+			'subtype' => 'elgg_upgrade',
+			'private_setting_name_value_pairs' => array(
+				'name' => 'is_completed',
+				'value' => '0',
+			),
+		));
 	}
 
 	/**

@@ -488,8 +488,12 @@ class Application {
 		}
 
 		if (get_input('upgrade') == 'upgrade') {
-
 			$upgrader = _elgg_services()->upgrades;
+
+			if ($upgrader->check()) {
+				elgg_add_admin_notice('pending_upgrades', elgg_echo('upgrade:pending'));
+			}
+
 			$result = $upgrader->run();
 			if ($result['failure'] == true) {
 				register_error($result['reason']);
