@@ -1,6 +1,6 @@
 <?php
 
-return [
+return array(
 	'activity:widgets:river_widget:title' => "Activity",
 	'activity:widgets:river_widget:description' => "Display latest activity",
 	'activity:widgets:river_widget:type' => "Type of activity",
@@ -13,4 +13,4 @@ return [
 	'activity:widgets:group_activity:content:noactivity' => 'There is no activity in this group',
 	'activity:widgets:group_activity:content:noselect' => 'Edit this widget to select a group',
 	
-];
+);

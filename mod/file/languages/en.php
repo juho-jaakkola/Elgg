@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -84,4 +84,4 @@ View and comment on the file:
 	'file:deletefailed' => "Your file could not be deleted at this time.",
 	'file:noaccess' => "You do not have permissions to change this file",
 	'file:cannotload' => "There was an error uploading the file",
-];
+);

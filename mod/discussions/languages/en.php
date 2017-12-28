@@ -1,6 +1,6 @@
 <?php
 
-return [
+return array(
 	'discussion' => 'Discussions',
 	'discussion:add' => 'Add discussion topic',
 	'discussion:latest' => 'Latest discussions',
@@ -69,4 +69,4 @@ View and comment on the discussion:
 	'discussions:upgrade:2017112800:description' => "Discussion replies used to have their own subtype, this has been unified into comments.",
 	'discussions:upgrade:2017112801:title' => "Migrate river activity related to discussion replies",
 	'discussions:upgrade:2017112801:description' => "Discussion replies used to have their own subtype, this has been unified into comments.",
-];
+);
