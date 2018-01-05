@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Блогови',
 	'blog:blogs' => 'Блогови',
 	'blog:revisions' => 'Ревизије',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Издвојено',
 	'blog:body' => 'Текст',
 	'blog:save_status' => 'Задњи пут сачуваноЧ',
-	
+
 	'blog:revision' => 'Ревизија',
 	'blog:auto_saved_revision' => 'Аутоматски сачувана ревизија',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Не могу да нађем ову ревизију.',
 
 	// river
-	'river:create:object:blog' => '%s је објавио блог чланак %s',
-	'river:comment:object:blog' => '%s је коментарисао блог %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Нови блог чланак %s',
@@ -62,5 +62,5 @@ return [
 	'blog:widget:description' => 'Прикажи твоје најновије блог чланке',
 	'blog:moreblogs' => 'Више блог чланака',
 	'blog:numbertodisplay' => 'Број блог чланака за приказ',
-	'blog:noblogs' => 'Нема блог чланака.'
-];
+	'blog:noblogs' => 'Нема блог чланака.',
+);

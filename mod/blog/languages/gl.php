@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Bitácoras',
 	'blog:blogs' => 'Bitácoras',
 	'blog:revisions' => 'Revisións',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Fragmento',
 	'blog:body' => 'Corp',
 	'blog:save_status' => 'Gardado:',
-	
+
 	'blog:revision' => 'Revisión',
 	'blog:auto_saved_revision' => 'Revisión gardada automaticamente',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Non é posíbel atopar esta revisión.',
 
 	// river
-	'river:create:object:blog' => '%s publicou un artigo %s',
-	'river:comment:object:blog' => '%s deixou un comentario na bitácora %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Novo artigo: «%s»',
@@ -62,5 +62,5 @@ Véxao e deixe un comentario desde:
 	'blog:widget:description' => 'Mostrar os seus últimos artigos',
 	'blog:moreblogs' => 'Máis artigos',
 	'blog:numbertodisplay' => 'Número de artigos para mostrar.',
-	'blog:noblogs' => 'Non hai artigos.'
-];
+	'blog:noblogs' => 'Non hai artigos.',
+);

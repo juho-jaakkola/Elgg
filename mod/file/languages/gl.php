@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Máis ficheiros",
 	'file:list' => "Vista de lista",
 	'file:group' => "Ficheiros do grupo",
-	'file:gallery' => "Vista de galería",
-	'file:gallery_list' => "Vistas de lista ou galería.",
 	'file:num_files' => "Número de ficheiros para mostrar",
-	'file:user:gallery'=>'Ver a galería %s',
 	'file:upload' => "Enviar un ficheir",
 	'file:replace' => 'Substituír o contido do ficheiro (deixar baleiro para non cambiar o ficheiro)',
 	'file:list:title' => "%s: %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Activar os ficheiros de grupo',
 
-	'file:delete:confirm' => "Está seguro de que quere eliminar este ficheiro?",
-
-	'file:upload_limit' => 'O tamaño máximo permitido para os ficheiros son %s.',
-
-	'file:tagcloud' => "Nube de etiquetas",
-
-	'file:display:number' => "Número de ficheiros para mostrar",
-
-	'river:create:object:file' => '%s enviou o ficheiro %s',
-	'river:comment:object:file' => '%s deixou un comentario no ficheiro %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Ficheiros',
 
@@ -92,9 +81,7 @@ Vexa e deixe un comentario no ficheiro:
 
 	'file:none' => "Non hai ficheiros",
 	'file:uploadfailed' => "Non foi posíbel gardar o ficheiro",
-	'file:downloadfailed' => "O ficheiro non está dispoñíbel nestes momentos",
 	'file:deletefailed' => "Non foi posíbel eliminar o ficheiro.",
 	'file:noaccess' => "Non ten permisos para cambiar o ficheiro.",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "Debe seleccionar un ficheiro.",
-];
+);

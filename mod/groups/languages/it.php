@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -20,17 +20,11 @@ return [
 
 	'groups:icon' => 'Icona del gruppo (lascia vuoto per tenerla invariata)',
 	'groups:name' => 'Nome del gruppo',
-	'groups:username' => 'Nome corto del gruppo (visualizzato negli URL, solo caratteri alfanumerici))',
 	'groups:description' => 'Descrizione',
 	'groups:briefdescription' => 'Breve descrizione',
 	'groups:interests' => 'Tag',
 	'groups:website' => 'Sito web',
 	'groups:members' => 'Membri del gruppo',
-	'groups:my_status' => 'Status',
-	'groups:my_status:group_owner' => 'Questo gruppo è tuo',
-	'groups:my_status:group_member' => 'Sei in questo gruppo',
-	'groups:subscribed' => 'Group notifications are on',
-	'groups:unsubscribed' => 'Group notifications are off',
 
 	'groups:members:title' => 'Membri di %s',
 	'groups:members:more' => "Visualizza tutti i membri",
@@ -46,14 +40,7 @@ return [
 	'groups:widget:membership' => 'Gruppi cui aderisci',
 	'groups:widgets:description' => 'Visualizza alcuni dei gruppi di cui sei membro',
 
-	'groups:widget:group_activity:title' => 'Attività del gruppo',
-	'groups:widget:group_activity:description' => 'Visualizza le attività in uno dei tuoi gruppi',
-	'groups:widget:group_activity:edit:select' => 'Seleziona un gruppo',
-	'groups:widget:group_activity:content:noactivity' => 'Nessuna attività in questo gruppo',
-	'groups:widget:group_activity:content:noselect' => 'Modifica questo widget per selezionare un gruppo',
-
 	'groups:noaccess' => 'Nessun accesso al gruppo',
-	'groups:ingroup' => 'nel gruppo',
 	'groups:cantcreate' => 'Non puoi creare un gruppo. Funzione riservata agli amministratori',
 	'groups:cantedit' => 'Non puoi modificare questo gruppo',
 	'groups:saved' => 'Gruppo salvato',
@@ -70,33 +57,32 @@ return [
 	'groups:leave' => 'Abbandona il gruppo',
 	'groups:invite' => 'Invita i tuoi amici',
 	'groups:invite:title' => 'Invita amici a questo gruppo',
-	'groups:inviteto' => "Invita i tuoi amici su '%s'",
-	'groups:nofriends' => "Non hai amici che non sono stati invitati a questo gruppo.",
+	'groups:invite:friends:help' => 'Cerca un amico usando il nome o il nome utente e selezionalo dall\'elenco',
+	'groups:invite:resend' => 'Reinvia gli inviti agli utenti già invitati',
+
 	'groups:nofriendsatall' => 'Non hai amici da invitare',
-	'groups:viagroups' => "via gruppo",
 	'groups:group' => "Gruppo",
 	'groups:search:tags' => "tag",
 	'groups:search:title' => "Cerca gruppi taggati con '%s'",
 	'groups:search:none' => "Nessun gruppo corrispondente trovato",
 	'groups:search_in_group' => "Cerca in questo gruppo",
 	'groups:acl' => "Gruppo: %s",
+	'groups:acl:in_context' => 'Membri del gruppo',
 
 	'groups:activity' => "Attività del gruppo",
 	'groups:enableactivity' => 'Abilita attività del gruppo',
 	'groups:activity:none' => "Non ci sono ancora attività del gruppo",
 
 	'groups:notfound' => "Gruppo non trovato",
-	'groups:notfound:details' => "Il gruppo richiesto non esiste o non hai accesso ad esso",
-
+	
 	'groups:requests:none' => 'Non ci sono richieste di iscrizione in sospeso in questo momento.',
 
 	'groups:invitations:none' => 'Non ci sono inviti in sospeso in questo momento.',
 
-	'groups:count' => "gruppi creati",
 	'groups:open' => "gruppo aperto",
 	'groups:closed' => "gruppo chiuso",
 	'groups:member' => "membri",
-	'groups:searchtag' => "Cerca tra i gruppi per tag",
+	'groups:search' => "Cerca gruppi",
 
 	'groups:more' => 'Altri gruppi',
 	'groups:none' => 'Nessun gruppo',
@@ -117,12 +103,9 @@ return [
 	/**
 	 * Group tools
 	 */
-	'groups:lastupdated' => 'Ultimo aggiornamento %s di %s',
-	'groups:lastcomment' => 'Ultimo commento %s di %s',
 
 	'admin:groups' => 'Groups',
 
-	'groups:privategroup' => 'Questo gruppo è privato, richiedi una adesione.',
 	'groups:notitle' => 'Il gruppo deve avere un titolo',
 	'groups:cantjoin' => 'Non puoi partecipare al gruppo',
 	'groups:cantleave' => 'Non puoi abbandonare il gruppo',
@@ -132,16 +115,15 @@ return [
 	'groups:addedtogroup' => 'L\'utente è stato aggiunto al gruppo con successo',
 	'groups:joinrequestnotmade' => 'La richiesta di partecipazione non può essere effettuata',
 	'groups:joinrequestmade' => 'La richiesta di partecipazione al gruppo è avvenuta con successo',
+	'groups:joinrequest:exists' => 'Hai già richiesto l\'adesione a questo gruppo',
+	'groups:button:joined' => 'Hai aderito',
+	'groups:button:owned' => 'Di tua proprietà',
 	'groups:joined' => 'Hai aderito al gruppo con successo!',
 	'groups:left' => 'Hai abbandonato il gruppo con successo!',
-	'groups:notowner' => 'Spiacenti, non sei il proprietario di questo gruppo.',
-	'groups:notmember' => 'Spiacenti, non sei membro di questo gruppo.',
-	'groups:alreadymember' => 'Sei già un membro di questo gruppo!',
 	'groups:userinvited' => 'L\'utente è stato invitato.',
 	'groups:usernotinvited' => 'L\'utente non può essere invitato.',
 	'groups:useralreadyinvited' => 'L\'utente è già stato invitato',
 	'groups:invite:subject' => "%s sei stato invitato a unirti a %s!",
-	'groups:started' => "Iniziato da %s",
 	'groups:joinrequest:remove:check' => 'Sei sicuro di voler annullare questa richiesta di adesione?',
 	'groups:invite:remove:check' => 'Sei sicuro di voler annullare questo invito?',
 	'groups:invite:body' => "Ciao %s,
@@ -168,36 +150,18 @@ o clicca qui sotto per vedere le richieste di adesione al gruppo:
 
 %s",
 
-	/**
-	 * Forum river items
-	 */
-
-	'river:create:group:default' => '%s ha creato il gruppo %s',
-	'river:join:group:default' => '%s ha aderito al gruppo %s',
-
-	'groups:nowidgets' => 'Nessun gadget è stato definito per questo gruppo.',
-
-
-	'groups:widgets:members:title' => 'Membri del gruppo',
-	'groups:widgets:members:description' => 'Elenca i membri di un gruppo.',
-	'groups:widgets:members:label:displaynum' => 'Elenca i membri di un gruppo.',
-	'groups:widgets:members:label:pleaseedit' => 'Per favore configura questo gadget.',
-
-	'groups:widgets:entities:title' => "Oggetti nel gruppo",
-	'groups:widgets:entities:description' => "Elenca gli oggetti salvati in questo gruppo",
-	'groups:widgets:entities:label:displaynum' => 'Elenca gli oggetti di un gruppo.',
-	'groups:widgets:entities:label:pleaseedit' => 'Per favore configura questo gadget.',
+	'river:group:create' => '%s ha creato il gruppo %s',
+	'river:group:join' => '%s ha aderito al gruppo %s',
 
 	'groups:allowhiddengroups' => 'Vuoi permettere gruppi privati (invisibili)?',
 	'groups:whocancreate' => 'Chi può creare nuovi gruppi?',
+	'groups:allow_activity' => 'Abilitare le pagine attività nei gruppi?',
 
 	/**
 	 * Action messages
 	 */
-	'group:deleted' => 'Il gruppo e il suo contenuto sono stati rimossi',
-	'group:notdeleted' => 'Il gruppo non può essere cancellato',
-
-	'group:notfound' => 'Gruppo non trovato',
+	'groups:deleted' => 'Gruppo e contenuti del gruppo eliminati',
+	'groups:notdeleted' => 'Non è stato possibile eliminare il gruppo',
 	'groups:deletewarning' => "Sei sicuro di voler eliminare questo gruppo? Questa azione non può essere annullata!",
 
 	'groups:invitekilled' => 'L\'invito è stato cancellato.',
@@ -209,4 +173,14 @@ o clicca qui sotto per vedere le richieste di adesione al gruppo:
 	 * ecml
 	 */
 	'groups:ecml:groupprofile' => 'Profili del gruppo',
-];
+
+	/**
+	 * Upgrades
+	 */
+	'groups:upgrade:2016101900:title' => 'Trasferisci le icone del gruppo in una nuova posizione',
+	'groups:upgrade:2016101900:description' => '
+		La nuova API per l\'icona delle entità salva le icone in posizioni prevedibili nel filestore
+		relativa alla cartella filestore dell\'entità. Questo aggiornamento allinea
+		allineerà il plugin gruppi con le specifiche della nuova API
+',
+);

@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Blogs',
 	'blog:blogs' => 'Blogs',
 	'blog:revisions' => 'Revisionen',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Auszug',
 	'blog:body' => 'Blogtext',
 	'blog:save_status' => 'Zuletzt gespeichert: ',
-	
+
 	'blog:revision' => 'Revision',
 	'blog:auto_saved_revision' => 'Automatisch gespeicherte Revision',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Diese Revision ist nicht verfügbar.',
 
 	// river
-	'river:create:object:blog' => '%s veröffentlichte den Blog-Eintrag %s',
-	'river:comment:object:blog' => '%s kommentierte den Blog-Eintrag %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Ein neuer Blog-Eintrag mit dem Titel %s wurde erstellt',
@@ -62,5 +62,5 @@ Schau Dir den neuen Blog-Eintrag an und schreibe einen Kommentar:
 	'blog:widget:description' => 'Dieses Widget zeigt Deine neuesten Blogs an.',
 	'blog:moreblogs' => 'Weitere Blog-Einträge',
 	'blog:numbertodisplay' => 'Anzahl der anzuzeigenden Blog-Einträge',
-	'blog:noblogs' => 'Keine Blog-Einträge vorhanden.'
-];
+	'blog:noblogs' => 'Keine Blog-Einträge vorhanden.',
+);

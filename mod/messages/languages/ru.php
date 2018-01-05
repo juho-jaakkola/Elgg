@@ -1,30 +1,23 @@
 <?php
-return [
+return array(
 	/**
 	* Menu items and titles
 	*/
 
 	'messages' => "Сообщения",
 	'messages:unreadcount' => "%s непрочитанных",
-	'messages:back' => "обратно к сообщениям",
 	'messages:user' => "Входящие %s",
-	'messages:posttitle' => "%s's сообщение %s",
 	'messages:inbox' => "Входящие",
 	'messages:sent' => "Отравленые",
 	'messages:message' => "Сообщение",
 	'messages:title' => "Тема",
 	'messages:to:help' => "Ники получателей",
-	'messages:replying' => "Ответить на сообщение",
 	'messages:inbox' => "Входящие",
 	'messages:sendmessage' => "Отправить сообщение",
 	'messages:add' => "Написать",
 	'messages:sentmessages' => "Отравленые сообщения",
-	'messages:recent' => "Последние сообщения",
-	'messages:original' => "Оригинал",
-	'messages:yours' => "Ваше сообщение",
 	'messages:toggle' => 'Отметить все',
 	'messages:markread' => 'Отметить как прочитаные',
-	'messages:recipient' => 'Выберите получателя ',
 	'messages:to_user' => 'Для: %s',
 
 	'messages:new' => 'Новое сообщение',
@@ -72,9 +65,6 @@ return [
 	*/
 
 	'messages:blank' => "Вы оставили пустое сообщение",
-	'messages:notfound' => "К сожалению, нам не удалось найти указанное сообщение.",
-	'messages:notdeleted' => "Sorry; we could not delete this message.",
-	'messages:nopermission' => "You do not have permission to alter that message.",
 	'messages:nomessages' => "There are no messages.",
 	'messages:user:nonexist' => "Мы не смогли найти получателя в базе данных пользователей.",
 	'messages:user:blank' => "Вы не выбрали получателя",
@@ -82,4 +72,4 @@ return [
 
 	'messages:deleted_sender' => 'Пользователя не существует.',
 
-];
+);

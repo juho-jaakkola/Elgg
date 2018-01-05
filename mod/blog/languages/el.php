@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Ιστολόγια',
 	'blog:blogs' => 'Ιστολόγια',
 	'blog:revisions' => 'Αναθεωρήσεις',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Aπόσπασμα',
 	'blog:body' => 'Κείμενο',
 	'blog:save_status' => 'Τελευταία αποθήκευση:',
-	
+
 	'blog:revision' => 'Αναθεώρηση',
 	'blog:auto_saved_revision' => 'Αυτόματη αποθήκευση αναθεώρησης',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Αδύνατη εύρεση της αναθέωρησης',
 
 	// river
-	'river:create:object:blog' => '%s δημοσίευσε στο ιστολόγιο %s',
-	'river:comment:object:blog' => '%s σχολίασε στο ιστολόγιο %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Νέα ανάρτηση με τίτλο %s',
@@ -62,5 +62,5 @@ return [
 	'blog:widget:description' => 'Προβολή πρόσφατων αναρτήσεων σας',
 	'blog:moreblogs' => 'Περισσότερες αναρτήσεις',
 	'blog:numbertodisplay' => 'Αριθμός αναρτήσεων για εμφάνιση',
-	'blog:noblogs' => 'Δεν υπάρχουν αναρτήσεις'
-];
+	'blog:noblogs' => 'Δεν υπάρχουν αναρτήσεις',
+);

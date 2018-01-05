@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s ha posteado en %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'wire',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Tu mensaje ha sido publicado exitosamente a The Wire.",
 	'thewire:deleted' => "El post ha sido borrado exitosamente.",
 	'thewire:blank' => "Necesitas ingresar más texto para publicar.",
-	'thewire:notfound' => "No se pudo encontrar el post.",
 	'thewire:notsaved' => "Lo sentimos. No pudimos guardar este post",
 	'thewire:notdeleted' => "No se pudo borrar este post.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Maximum number of characters for wire messages:",
 	'thewire:settings:limit:none' => "No limit",
-];
+);

@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Еще файлы",
 	'file:list' => "в виде списка",
 	'file:group' => "Файлы группы",
-	'file:gallery' => "в виде галереи",
-	'file:gallery_list' => "В виде галереи или списка",
 	'file:num_files' => "Число отображаемых файлов",
-	'file:user:gallery'=>'Просмотреть галерею %s',
 	'file:upload' => "Загрузить файл",
 	'file:replace' => 'Заменить файл (оставьте пустым чтобы не менять файл)',
 	'file:list:title' => "%s's %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Включить файлы в группе',
 
-	'file:delete:confirm' => "Удалить этот файл?",
-
-	'file:upload_limit' => 'Максимальный допустимый размер файла %s',
-
-	'file:tagcloud' => "Облако тегов",
-
-	'file:display:number' => "Число отображаемых файлов",
-
-	'river:create:object:file' => '%s загрузил(а) файл %s',
-	'river:comment:object:file' => '%s комментировал(а) файл %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Файлы',
 
@@ -92,9 +81,7 @@ return [
 
 	'file:none' => "---",
 	'file:uploadfailed' => "Простите, файл не сохранен.",
-	'file:downloadfailed' => "Простите, файл сейчас недоступен.",
 	'file:deletefailed' => "Простите, файл не удален.",
 	'file:noaccess' => "У Вас нет прав для изменения этого файла.",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "Вам нужно выбрать файл",
-];
+);

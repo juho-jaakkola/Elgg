@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Више фајлова",
 	'file:list' => "Листа - преглед",
 	'file:group' => "Фајлови групе",
-	'file:gallery' => "Галерија - преглед",
-	'file:gallery_list' => "Галерија или листа",
 	'file:num_files' => "Број фајлова за приказ",
-	'file:user:gallery'=>'Види %s галерију',
 	'file:upload' => "Додај фајл",
 	'file:replace' => 'Замени садржај фајла (остави празно да не промениш фајл)',
 	'file:list:title' => "%s %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Омогући фајлове групе',
 
-	'file:delete:confirm' => "Да ли сте сигурни да желите да обришете овај фајл?",
-
-	'file:upload_limit' => 'Максимална дозвољена величина фајла је %s',
-
-	'file:tagcloud' => "Облак ознака",
-
-	'file:display:number' => "Број фајлова за приказ",
-
-	'river:create:object:file' => '%s је додао/ла фајл %s',
-	'river:comment:object:file' => '%s је коментарисао/ла на фајл %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Фајлови',
 
@@ -92,9 +81,7 @@ return [
 
 	'file:none' => "Нема фајлова.",
 	'file:uploadfailed' => "Извините, нисмо могли да сачувамо ваш фајл.",
-	'file:downloadfailed' => "Извинте,  овај фајл није доступан тренутно.",
 	'file:deletefailed' => "Нисмо могли да обришемо ваш фајл.",
 	'file:noaccess' => "Немте дозволе да мењате овај фајл",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "Морате да означите фајл",
-];
+);

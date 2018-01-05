@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Blog',
 	'blog:blogs' => 'Blog',
 	'blog:revisions' => 'Revisioni',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Estratto',
 	'blog:body' => 'Corpo',
 	'blog:save_status' => 'Ultimo salvataggio:',
-	
+
 	'blog:revision' => 'Revisione',
 	'blog:auto_saved_revision' => 'Revisione salvata automaticamente',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Impossibile trovare questa revisione.',
 
 	// river
-	'river:create:object:blog' => '%s ha pubblicato un articolo %s ',
-	'river:comment:object:blog' => '%s ha commentato sul blog %s',
+	'river:object:blog:create' => '%sha pubblicato un articolo nel blog %s',
+	'river:object:blog:comment' => '%s ha commentato il blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Nuovo articolo chiamato %s',
@@ -62,5 +62,5 @@ Leggi e commenta l\'articolo nel blog:
 	'blog:widget:description' => 'Visualizza gli articoli recenti',
 	'blog:moreblogs' => 'Altri articoli',
 	'blog:numbertodisplay' => 'Numero di articoli da visualizzare',
-	'blog:noblogs' => 'Nessun articolo'
-];
+	'blog:noblogs' => 'Nessun articolo',
+);

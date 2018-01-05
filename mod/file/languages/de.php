@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Weitere Dateien",
 	'file:list' => "Listen-Ansicht",
 	'file:group' => "Gruppen-Dateien",
-	'file:gallery' => "Gallerie-Ansicht",
-	'file:gallery_list' => "Gallerie- oder Listen-Ansicht",
 	'file:num_files' => "Anzahl der anzuzeigenden Dateien",
-	'file:user:gallery'=>'Gallerie-Ansicht der Dateien von %s',
 	'file:upload' => "Datei hochladen",
 	'file:replace' => 'Ersetzen der Datei (leer lassen, um Datei nicht zu ändern)',
 	'file:list:title' => "%s's %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Gruppen-Dateien aktivieren',
 
-	'file:delete:confirm' => "Bist Du sicher, dass Du diese Datei löschen willst?",
-
-	'file:upload_limit' => 'Die maximal zulässige Dateigröße ist %s.',
-
-	'file:tagcloud' => "Tagcloud",
-
-	'file:display:number' => "Anzahl der anzuzeigenden Dateien",
-
-	'river:create:object:file' => '%s hat die Datei %s hochgeladen',
-	'river:comment:object:file' => '%s kommentierte die Datei %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Dateien',
 
@@ -92,9 +81,7 @@ Schau Dir die Datei an und schreibe einen Kommentar:
 
 	'file:none' => "Noch keine Dateien vorhanden.",
 	'file:uploadfailed' => "Entschuldigung, wir konnten Deine Datei nicht speichern.",
-	'file:downloadfailed' => "Entschuldigung, diese Datei ist derzeit nicht verfügbar.",
 	'file:deletefailed' => "Deine Datei konnte zu diesem Zeitpunkt nicht gelöscht werden.",
 	'file:noaccess' => "Du hast keine Berechtigung, um diesen Datei-Eintrag zu ändern.",
 	'file:cannotload' => "Beim Hochladen dieser Datei ist ein Fehler aufgetreten.",
-	'file:nofile' => "Du mußt eine Datei auswählen.",
-];
+);

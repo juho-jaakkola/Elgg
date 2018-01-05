@@ -1,30 +1,23 @@
 <?php
-return [
+return array(
 	/**
 	* Menu items and titles
 	*/
 
 	'messages' => "Messaggi",
 	'messages:unreadcount' => "%s non letti",
-	'messages:back' => "torna ai messaggi",
 	'messages:user' => "Posta in arrivo di %s",
-	'messages:posttitle' => "Messaggio di %s: %s",
 	'messages:inbox' => "In arrivo",
 	'messages:sent' => "Posta inviata",
 	'messages:message' => "Messaggio",
 	'messages:title' => "Titolo",
 	'messages:to:help' => "Scrivi il nome utente del destinatario qui",
-	'messages:replying' => "Messaggio di risposta a",
 	'messages:inbox' => "In arrivo",
 	'messages:sendmessage' => "Invia un messaggio",
 	'messages:add' => "Scrivi un messaggio",
 	'messages:sentmessages' => "Posta inviata",
-	'messages:recent' => "Messaggi recenti",
-	'messages:original' => "Messaggio originale",
-	'messages:yours' => "Il tuo messaggio",
 	'messages:toggle' => 'Seleziona tutti',
 	'messages:markread' => 'Segna come già letto',
-	'messages:recipient' => 'Scegli un destinatario',
 	'messages:to_user' => 'A: %s',
 
 	'messages:new' => 'Nuovo messaggio',
@@ -72,9 +65,6 @@ Non puoi rispondere a questa email.",
 	*/
 
 	'messages:blank' => "Spiacenti; devi scrivere qualcosa nel messaggio prima di poter salvare.",
-	'messages:notfound' => "Spiacenti; non abbiamo potuto trovare il messaggio.",
-	'messages:notdeleted' => "Spiacenti; non abbiamo potuto cancellare il messaggio.",
-	'messages:nopermission' => "Non hai i permessi per modificare il messaggio.",
 	'messages:nomessages' => "Non ci sono messaggi da visualizzare.",
 	'messages:user:nonexist' => "Non siamo riusciti a trovare il destinatario nel database degli utenti.",
 	'messages:user:blank' => "Non hai selezionato nessuno a cui inviare il messaggio.",
@@ -82,4 +72,4 @@ Non puoi rispondere a questa email.",
 
 	'messages:deleted_sender' => 'Utente cancellato',
 
-];
+);

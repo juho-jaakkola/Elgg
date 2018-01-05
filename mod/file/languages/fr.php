@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Plus de fichiers",
 	'file:list' => "vue liste",
 	'file:group' => "Fichiers du groupe",
-	'file:gallery' => "vue galerie",
-	'file:gallery_list' => "Vue \"liste\" ou \"galerie\"",
 	'file:num_files' => "Nombre de fichiers à afficher",
-	'file:user:gallery'=>'Voir la galerie %s',
 	'file:upload' => "Envoyer un fichier",
 	'file:replace' => 'Remplacer le contenu du fichier (ne rien sélectionner pour ne pas changer)',
 	'file:list:title' => "de %s %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Activer les fichiers de groupes',
 
-	'file:delete:confirm' => "Confirmez-vous vouloir supprimer ce fichier ?",
-
-	'file:upload_limit' => 'La taille de fichier maximale autorisée est de %s',
-
-	'file:tagcloud' => "Nuage de tags",
-
-	'file:display:number' => "Nombre de fichiers à afficher",
-
-	'river:create:object:file' => '%s a chargé le fichier %s',
-	'river:comment:object:file' => '%s a commenté le fichier %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Fichiers',
 
@@ -92,9 +81,7 @@ Accéder à ce fichier et le commenter:
 
 	'file:none' => "Aucun fichier pour le moment.",
 	'file:uploadfailed' => "Désolé, votre fichier n'a pas pu être enregistré.",
-	'file:downloadfailed' => "Désolé, ce fichier n'est pas disponible en ce moment.",
 	'file:deletefailed' => "Votre fichier n'a pas pu être supprimé.",
 	'file:noaccess' => "Vous n'avez pas la permission de modifier ce fichier",
 	'file:cannotload' => "Une erreur s'est produite lors de l'envoi du fichier",
-	'file:nofile' => "Vous devez sélectionner un fichier",
-];
+);

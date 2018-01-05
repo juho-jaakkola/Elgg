@@ -1,30 +1,23 @@
 <?php
-return [
+return array(
 	/**
 	* Menu items and titles
 	*/
 
 	'messages' => "Mensaxes",
 	'messages:unreadcount' => "%s sen ler",
-	'messages:back' => "Volver ás mensaxes",
 	'messages:user' => "Caixa de entrada de %s",
-	'messages:posttitle' => "Mensaxes de %s: %s",
 	'messages:inbox' => "Caixa de entrada",
 	'messages:sent' => "Enviadas",
 	'messages:message' => "Mensaxe",
 	'messages:title' => "Asunt",
 	'messages:to:help' => "Escriba aquí o nome de usuario do destinatario.",
-	'messages:replying' => "Mensaxe en resposta a ",
 	'messages:inbox' => "Caixa de entrada",
 	'messages:sendmessage' => "Enviar unha mensaxe",
 	'messages:add' => "Redactar unha mensaxe",
 	'messages:sentmessages' => "Mensaxes enviadas",
-	'messages:recent' => "Últimas mensaxes",
-	'messages:original' => "Mensaxe orixinal",
-	'messages:yours' => "Mensaxe súa",
 	'messages:toggle' => 'Alternalo todo',
 	'messages:markread' => 'Marcar como lida',
-	'messages:recipient' => 'Seleccione un destinatario&hellip;',
 	'messages:to_user' => 'Para: %s',
 
 	'messages:new' => 'Nova mensaxe',
@@ -72,9 +65,6 @@ return [
 	*/
 
 	'messages:blank' => "Non pode gardar unha mensaxe co corpo baleiro.",
-	'messages:notfound' => "Non foi posíbel atopar a mensaxe indicada.",
-	'messages:notdeleted' => "Non foi posíbel eliminar a mensaxe.",
-	'messages:nopermission' => "Non ten permisos para modificar a mensaxe.",
 	'messages:nomessages' => "Non hai ningunha mensaxe.",
 	'messages:user:nonexist' => "Non foi posíbel atopar o destinatario na base de datos de usuarios.",
 	'messages:user:blank' => "Non indicou ningún destinatario.",
@@ -82,4 +72,4 @@ return [
 
 	'messages:deleted_sender' => 'Usuario eliminado.',
 
-];
+);

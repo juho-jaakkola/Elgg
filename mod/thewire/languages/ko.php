@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s 가  %s 에 글을 남겼습니다",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => '쪽글',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "성공적으로 쪽글을 썼습니다",
 	'thewire:deleted' => "성공적으로 쪽글을 지웠습니다.",
 	'thewire:blank' => "죄송합니다. 이글을 등록하기 전에 글자를 더 입력해야합니다.",
-	'thewire:notfound' => "죄송합니다. 해당하는 쪽글을 찾을 수 없었습니다.",
 	'thewire:notsaved' => "죄송합니다. 쪽글을 저장할 수 없었습니다.",
 	'thewire:notdeleted' => "죄송합니다. 이 쪽글을 지울 수 없었습니다.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "쪽글의 최대 문자수:",
 	'thewire:settings:limit:none' => "제한없슴",
-];
+);

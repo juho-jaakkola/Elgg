@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Mover archivo",
 	'file:list' => "Listar archivos",
 	'file:group' => "Archivos de los Grupos",
-	'file:gallery' => "vista de galer&iacute;a",
-	'file:gallery_list' => "Galer&iacute;a o vista de lista",
 	'file:num_files' => "N&uacute;mero de archivos a mostrar",
-	'file:user:gallery'=>'Ver galer&iacute;a de %s',
 	'file:upload' => "Subir un archivo",
 	'file:replace' => 'Reemplazar los contenidos del archivo (deja en blanco para no cambiar el archivo)',
 	'file:list:title' => "%s's %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Habilitar Archivos para los Grupos',
 
-	'file:delete:confirm' => "&iquest;Seguro que deseas borrar este archivo?",
-
-	'file:upload_limit' => 'El tamaño máximo permitido por fichero son %s.',
-
-	'file:tagcloud' => "Nube de etiquetas",
-
-	'file:display:number' => "N&uacute;mero de archivos a mostrar",
-
-	'river:create:object:file' => '%s ha subido el archivo %s',
-	'river:comment:object:file' => '%s ha comentado el archivo %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Archivo',
 
@@ -92,9 +81,7 @@ Ver y comentar en el archivo:
 
 	'file:none' => "No hay archivos.",
 	'file:uploadfailed' => "No se pudo guardar el archivo.",
-	'file:downloadfailed' => "El archivo no est&aacute; disponible momentáneamente.",
 	'file:deletefailed' => "El archivo no pudo ser borrado ahora.",
 	'file:noaccess' => "No tienes permisos para modficar este archivo",
 	'file:cannotload' => "Ha habido un error subiendo el archivo",
-	'file:nofile' => "Debes seleccionar un archivo",
-];
+);

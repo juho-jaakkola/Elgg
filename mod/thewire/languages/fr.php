@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s a publié sur %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'le Fil',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Votre message a bien été publié sur le Fil.",
 	'thewire:deleted' => "Votre message a bien été supprimé du Fil.",
 	'thewire:blank' => "Désolé, vous devez d'abord écrire un message avant de pouvoir le publier.",
-	'thewire:notfound' => "Désolé, le message spécifié n'a pu être trouvé.",
 	'thewire:notsaved' => "Désolé. Impossible d'enregistrer ce message du Fil.",
 	'thewire:notdeleted' => "Désolé, ce message du Fil n'a pas pu être supprimé.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Nombre maximum de caractères pour chaque commentaire :",
 	'thewire:settings:limit:none' => "Pas de limite",
-];
+);

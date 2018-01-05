@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s さんが %s に投稿しました",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'つぶやき',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "あなたのつぶやきを投稿しました。",
 	'thewire:deleted' => "つぶやきを削除しまいした。",
 	'thewire:blank' => "申し訳ありません、入力欄が空欄なので投稿できません。",
-	'thewire:notfound' => "申し訳ありません、お探しの投稿は見つかりませんでした。",
 	'thewire:notsaved' => "申し訳ありません。このつぶやきを保存できませんでした",
 	'thewire:notdeleted' => "申し訳ありません、この投稿を削除できませんでした。",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "つぶやきに使用できる最大の文字数:",
 	'thewire:settings:limit:none' => "制限なし",
-];
+);

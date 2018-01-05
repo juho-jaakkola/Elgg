@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s skrev til %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'wire',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Dit indlæg blev postet til the wire.",
 	'thewire:deleted' => "Dit wire indlæg er blevet slettet.",
 	'thewire:blank' => "Beklager, du skal skrive noget i tekstboksen, før det kan gemmes.",
-	'thewire:notfound' => "Beklager, vi kunne ikke finde det specificerede wire indlæg.",
 	'thewire:notsaved' => "Beklager. Vi kunne ikke gemme dette wire indlæg.",
 	'thewire:notdeleted' => "Beklager, vi kunne ikke slette dette wire indlæg.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Maximum number of characters for wire messages:",
 	'thewire:settings:limit:none' => "No limit",
-];
+);

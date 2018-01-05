@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s plaatste een bericht op %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'The Wire',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Je bericht is succesvol geplaatst op The Wire.",
 	'thewire:deleted' => "Je notitie is succesvol verwijderd.",
 	'thewire:blank' => "Sorry, je moet wel iets intypen voordat we je bericht kunnen versturen!",
-	'thewire:notfound' => "Sorry, we konden het gezochte Wire-bericht niet vinden.",
 	'thewire:notsaved' => "Sorry, we konden je Wire-bericht niet opslaan.",
 	'thewire:notdeleted' => "Sorry, we konden dit Wire-bericht niet verwijderen.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Maximum aantal karakters voor Wire-berichten:",
 	'thewire:settings:limit:none' => "Geen limiet",
-];
+);

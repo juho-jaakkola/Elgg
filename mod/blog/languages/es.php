@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Blogs',
 	'blog:blogs' => 'Blogs',
 	'blog:revisions' => 'Revisiones',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Extracto',
 	'blog:body' => 'Cuerpo',
 	'blog:save_status' => '&Uacute;ltimo guardado: ',
-	
+
 	'blog:revision' => 'Revisi&oacute;n',
 	'blog:auto_saved_revision' => 'Revisi&oacute;n autoguardada',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'No se puede encontrar esta revisi&oacute;n.',
 
 	// river
-	'river:create:object:blog' => '%s ha publicado una entrada en el blog %s',
-	'river:comment:object:blog' => '%s ha comentado en el blog %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Nueva entrada en el blog llamado: %s',
@@ -62,5 +62,5 @@ Ver y comentar en el blog:
 	'blog:widget:description' => 'Mostrar las &uacute;ltimas entradas del Blog',
 	'blog:moreblogs' => 'M&aacute;s entradas',
 	'blog:numbertodisplay' => 'N&uacute;mero de entradas a mostrar',
-	'blog:noblogs' => 'No hay entradas'
-];
+	'blog:noblogs' => 'No hay entradas',
+);

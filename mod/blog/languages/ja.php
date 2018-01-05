@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'ブログ',
 	'blog:blogs' => 'ブログ',
 	'blog:revisions' => '変更履歴',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => '見出し',
 	'blog:body' => '本文',
 	'blog:save_status' => '最後に保存:',
-	
+
 	'blog:revision' => '変更履歴',
 	'blog:auto_saved_revision' => '自動保存された変更履歴',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'この変更記録を見つけることはできませんでした。',
 
 	// river
-	'river:create:object:blog' => '%s さんは、ブログ「%s」を公表しました。',
-	'river:comment:object:blog' => '%s さんは、ブログ「%s」にコメントしました。',
+	'river:object:blog:create' => '%s さんがブログ %s を公開しました。',
+	'river:object:blog:comment' => '%s さんがブログ %s にコメントしました。',
 
 	// notifications
 	'blog:notify:summary' => '新着ブログ「%s」',
@@ -62,5 +62,5 @@ return [
 	'blog:widget:description' => 'あなたの最近のブログ記事を表示',
 	'blog:moreblogs' => '別のブログ記事',
 	'blog:numbertodisplay' => 'ブログ記事の表示件数',
-	'blog:noblogs' => 'ブログ記事は一つもありません'
-];
+	'blog:noblogs' => 'ブログ記事は一つもありません',
+);

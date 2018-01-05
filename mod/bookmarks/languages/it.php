@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -14,9 +14,6 @@ return [
 	'bookmarks:this:group' => "Segnalibro in %s",
 	'bookmarks:bookmarklet' => "Ottieni bookmarklet",
 	'bookmarks:bookmarklet:group' => "Ottieni bookmarklet del gruppo",
-	'bookmarks:inbox' => "Segnalibri in arrivo",
-	'bookmarks:with' => "Condividi con",
-	'bookmarks:new' => "Un nuovo segnalibro",
 	'bookmarks:address' => "Indirizzo del segnalibro",
 	'bookmarks:none' => 'Nessun segnalibro',
 
@@ -33,24 +30,15 @@ Visualizza e commenta il segnalibro:
 %s
 ',
 
-	'bookmarks:delete:confirm' => "Sei sicuro di voler eliminare questa risorsa?",
-
 	'bookmarks:numbertodisplay' => 'Numero di segnalibri da mostrare',
 
-	'bookmarks:shared' => "Segnato come segnalibro",
-	'bookmarks:visit' => "Visita URL",
-	'bookmarks:recent' => "Segnalibri recenti",
-
-	'river:create:object:bookmarks' => '%s ha segnato %s',
-	'river:comment:object:bookmarks' => '%s ha commentato un segnalibro %s',
-	'bookmarks:river:annotate' => 'un commento a questo segnalibro',
-	'bookmarks:river:item' => 'un elemento',
+	'river:object:bookmarks:create' => '%s ha aggiunto il segnalibro %s',
+	'river:object:bookmarks:comment' => '%s ha commentato il segnalibro %s',
 
 	'item:object:bookmarks' => 'Segnalibri',
 
 	'bookmarks:group' => 'Segnalibri di gruppo',
 	'bookmarks:enablebookmarks' => 'Abilita i segnalibri di gruppo',
-	'bookmarks:nogroup' => 'Questo gruppo non ha ancora salvato segnalibri',
 	
 	/**
 	 * Widget and bookmarklet
@@ -78,7 +66,6 @@ Visualizza e commenta il segnalibro:
 	 */
 
 	'bookmarks:save:failed' => "Il tuo segnalibro non può essere salvato. Assicurati di aver inserito un titolo e un indirizzo poi ritenta.",
-	'bookmarks:save:invalid' => "L'indirizzo del segnalibro non è valido e non può essere salvato.",
 	'bookmarks:delete:failed' => "Il tuo segnalibro non può essere eliminato. Riprova.",
 	'bookmarks:unknown_bookmark' => 'Impossibile trovare il segnalibro specificato.',
-];
+);

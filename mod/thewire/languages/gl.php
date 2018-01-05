@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s publicou en %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'Chíos',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Publicouse o chío.",
 	'thewire:deleted' => "Eliminouse o chío.",
 	'thewire:blank' => "Non pode publicar chíos baleiros.",
-	'thewire:notfound' => "Non foi posíbel atopar o chío indicado",
 	'thewire:notsaved' => "Non foi posíbel gardar o chío.",
 	'thewire:notdeleted' => "Non foi posíbel eliminar o chío.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Número máximo de caracteres por chío:",
 	'thewire:settings:limit:none' => "Sen límite",
-];
+);

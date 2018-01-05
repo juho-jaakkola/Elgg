@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Блог',
 	'blog:blogs' => 'Блоги',
 	'blog:revisions' => 'Редакции',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Краткое описание',
 	'blog:body' => 'Сообщение',
 	'blog:save_status' => 'Сохранено: ',
-	
+
 	'blog:revision' => 'Редакция',
 	'blog:auto_saved_revision' => 'Автосохраненная редакция',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Cannot find this revision.',
 
 	// river
-	'river:create:object:blog' => '%s опубликовал(а) пост %s',
-	'river:comment:object:blog' => '%s комментировал(а) пост %s',
+	'river:object:blog:create' => '%s опубликовал новую запись %s',
+	'river:object:blog:comment' => '%s оставил(а) комментарий под записью %s',
 
 	// notifications
 	'blog:notify:summary' => 'Новая запись блога %s',
@@ -62,5 +62,5 @@ return [
 	'blog:widget:description' => 'Показать последние посты',
 	'blog:moreblogs' => 'Показать больше постов',
 	'blog:numbertodisplay' => 'Число отображаемых постов',
-	'blog:noblogs' => 'Нет постов'
-];
+	'blog:noblogs' => 'Нет постов',
+);

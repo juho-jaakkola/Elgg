@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Blogi',
 	'blog:blogs' => 'Blogi',
 	'blog:revisions' => 'Wersje',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Fragment',
 	'blog:body' => 'Treść',
 	'blog:save_status' => 'Ostatnio zapisano:',
-	
+
 	'blog:revision' => 'Wersja',
 	'blog:auto_saved_revision' => 'Automatycznie zapisana wersja',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Nie znaleziono wskazanej wersji.',
 
 	// river
-	'river:create:object:blog' => '%s opublikował wpis na blogu %s',
-	'river:comment:object:blog' => '%s skomentował wpis na blogu %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Nowy wpis na blogu o nazwie %s',
@@ -62,5 +62,5 @@ Zobacz i skomentuj nowy wpis na blogu:
 	'blog:widget:description' => 'Wyświetl moje najnowsze wpisy na blogu',
 	'blog:moreblogs' => 'Więcej wpisów na blogu',
 	'blog:numbertodisplay' => 'Ilość wyświetlanych wpisów',
-	'blog:noblogs' => 'Brak wpisów na blogu'
-];
+	'blog:noblogs' => 'Brak wpisów na blogu',
+);

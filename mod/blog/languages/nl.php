@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Blog',
 	'blog:blogs' => 'Blogs',
 	'blog:revisions' => 'Revisies',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Uittreksel',
 	'blog:body' => 'Bericht',
 	'blog:save_status' => 'Laatst opgeslagen:',
-	
+
 	'blog:revision' => 'Revisie',
 	'blog:auto_saved_revision' => 'Revisie automatisch opgeslagen',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Kan deze revisie niet vinden.',
 
 	// river
-	'river:create:object:blog' => '%s plaatste een blog: \'%s\'',
-	'river:comment:object:blog' => '%s reageerde op de blog \'%s\'',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Nieuwe blog met de titel \'%s\'',
@@ -69,5 +69,5 @@ Dit is een automatisch aangemaakt bericht. Je kunt hier niet op antwoorden.
 	'blog:widget:description' => 'Deze widget toont je laatste blogberichten',
 	'blog:moreblogs' => 'Meer blogberichten',
 	'blog:numbertodisplay' => 'Aantal blogberichten om te tonen:',
-	'blog:noblogs' => 'Geen blogs'
-];
+	'blog:noblogs' => 'Geen blogs',
+);

@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'likes:this' => 'piace questo',
 	'likes:deleted' => 'Il tuo "mi piace" è stato rimosso',
 	'likes:see' => 'Guarda a chi piace',
@@ -35,5 +35,7 @@ o guarda il profilo di %2$s qui:
 Grazie,
 %4$s
 ',
+	'likes:upgrade:2017120700:title' => "Annotazioni pubbliche dei like",
+	'likes:upgrade:2017120700:description' => "Questo aggiorna l'id di accesso delle annotazioni dei like in pubbliche",
 	
-];
+);

@@ -1,13 +1,11 @@
 <?php
 
-return [
+return array(
 	'discussion' => 'Forum',
 	'discussion:add' => 'Aggiungi argomento',
 	'discussion:latest' => 'Ultimi argomenti',
 	'discussion:group' => 'Forum di gruppo',
 	'discussion:none' => 'Nessuna discussione',
-	'discussion:reply:title' => 'Rispondi con %s',
-	'discussion:new' => "Aggiungi un nuovo argomento",
 	'discussion:updated' => "Ultima risposta di %s %s",
 
 	'discussion:topic:created' => 'L\'argomento è stato creato.',
@@ -20,29 +18,12 @@ return [
 	'discussion:error:permissions' => 'Permessi insufficienti per completare questa azione',
 	'discussion:error:notdeleted' => 'Impossibile eliminare l\'argomento',
 
-	'discussion:reply:edit' => 'Modifica la risposta',
-	'discussion:reply:deleted' => 'La risposta è stata eliminata.',
-	'discussion:reply:error:notfound' => 'La risposta non è stata trovata',
-	'discussion:reply:error:notfound_fallback' => "Spiacenti, non abbiamo trovato la risposta specificata ma ti abbiamo inoltrato alla pagina dell'argomento di discussione iniziale",
-	'discussion:reply:error:notdeleted' => 'Impossibile eliminare la risposta',
-
-	'discussion:search:title' => 'Risposta all\'argomento: %s',
-
-	/**
-	 * Action messages
-	 */
-	'discussion:reply:missing' => 'Non si può inviare una risposta vuota',
-	'discussion:reply:topic_not_found' => 'Argomento non trovato',
-	'discussion:reply:error:cannot_edit' => 'Permessi insufficienti per modificare questa risposta',
-	'discussion:reply:error:permissions' => 'You are not allowed to reply to this topic',
-
 	/**
 	 * River
 	 */
-	'river:create:object:discussion' => '%s ha aggiunto il nuovo argomento di discussione: %s',
-	'river:reply:object:discussion' => '%s ha risposto alla discussione: %s',
-	'river:reply:view' => 'visualizza risposta',
-
+	'river:object:discussion:create' => '%s ha aggiunto un nuovo argomento di discussione %s',
+	'river:object:discussion:comment' => '%s ha commentato la discussione %s',
+	
 	/**
 	 * Notifications
 	 */
@@ -58,29 +39,19 @@ Visualizza e rispondi qui:
 %s
 ',
 
-	'discussion:comment:notify:summary' => 'Nuova risposta alla discussione: %s',
-	'discussion:comment:notify:subject' => 'Nuova risposta alla discussione: %s',
+	'discussion:comment:notify:summary' => 'Nuovo commento all\'argomento: %s',
+	'discussion:comment:notify:subject' => 'Nuovo commento all\'argomento: %s',
 	'discussion:comment:notify:body' =>
-'%s ha inviato una risposta nella discussione "%s":
+'%s ha commentato l\'argomento "%s";
 
 %s
 
-Visualizza e rispondi qui:
-
-%s
-',
+Guarda e commenta la discussione:
+%s',
 
 	'item:object:discussion' => "Argomenti di discussione",
-	'item:object:discussion_reply' => "Risposte alle discussioni",
 
 	'groups:enableforum' => 'Abilita discussioni di gruppo',
-
-	'reply:this' => 'Rispondi a questo',
-
-	/**
-	 * ecml
-	 */
-	'discussion:ecml:discussion' => 'Discussioni di gruppo',
 
 	/**
 	 * Discussion status
@@ -89,13 +60,13 @@ Visualizza e rispondi qui:
 	'discussion:topic:closed:title' => 'Questa discussione è chiusa',
 	'discussion:topic:closed:desc' => 'Questa discussione è chiusa e non accetta nuovi commenti',
 
-	'discussion:replies' => 'Risposte',
 	'discussion:addtopic' => 'Aggiungi un argomento',
-	'discussion:post:success' => 'La tua risposta è stata pubblicata',
-	'discussion:post:failure' => 'Si è verificato un problema durante il salvataggio della tua risposta',
 	'discussion:topic:edit' => 'Modifica argomento',
 	'discussion:topic:description' => 'Messaggio dell\'argomento',
 
-	'discussion:reply:edited' => "Hai modificato con successo il post",
-	'discussion:reply:error' => "Problema durante la modifica del post",
-];
+	// upgrades
+	'discussions:upgrade:2017112800:title' => "Converti le risposte alle discussioni in commenti",
+	'discussions:upgrade:2017112800:description' => "Le risposte alle discussioni erano dei sottotipi a parte che ora sono stati uniformati ai commenti",
+	'discussions:upgrade:2017112801:title' => "Migra le risposte alle discussioni sul river",
+	'discussions:upgrade:2017112801:description' => "Le risposte alle discussioni erano dei sottotipi a parte che ora sono stati uniformati ai commenti",
+);

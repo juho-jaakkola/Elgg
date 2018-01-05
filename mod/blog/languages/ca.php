@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Blocs',
 	'blog:blogs' => 'Blocs',
 	'blog:revisions' => 'Revisions',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Extracte',
 	'blog:body' => 'Cos',
 	'blog:save_status' => 'Desat: ',
-	
+
 	'blog:revision' => 'Revisió',
 	'blog:auto_saved_revision' => 'Revisió desada automàticament',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'No s\'ha pogut trobar la revisió.',
 
 	// river
-	'river:create:object:blog' => '%s ha publicat una entrada al bloc %s',
-	'river:comment:object:blog' => '%s ha comentat  en el bloc %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Nou missatge de bloc anomenat %s',
@@ -63,5 +63,5 @@ Veure i comentar el nou missatge:
 	'blog:widget:description' => 'Aquest giny mostra les darreres entrades al bloc.',
 	'blog:moreblogs' => 'Més entrades',
 	'blog:numbertodisplay' => 'Nombre d\'entrades del bloc a mostrar',
-	'blog:noblogs' => 'No hi ha entrades del bloc'
-];
+	'blog:noblogs' => 'No hi ha entrades del bloc',
+);

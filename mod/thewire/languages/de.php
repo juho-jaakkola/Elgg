@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s schrieb im %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'Heißen Draht',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Deine Nachricht wurde dem Heißen Draht hinzugefügt.",
 	'thewire:deleted' => "Die Nachricht wurde aus dem Heißen Draht gelöscht.",
 	'thewire:blank' => "Entschuldigung, Du mußt erst etwas schreiben, bevor es veröffentlicht werden kann.",
-	'thewire:notfound' => "Entschuldigung, die gesuchte Nachricht aus dem Heißen Draht konnte nicht gefunden werden.",
 	'thewire:notsaved' => "Entschuldigung, das Speichern der Nachricht ist fehlgeschlagen.",
 	'thewire:notdeleted' => "Entschuldigung, das Löschen der Nachricht aus dem Heißen Draht ist fehlgeschlagen.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Maximal erlaubte Anzahl an Zeichen in Nachrichten im Heißen Draht:",
 	'thewire:settings:limit:none' => "Kein Limit",
-];
+);

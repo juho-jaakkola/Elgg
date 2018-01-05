@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Vedi tutti i file",
 	'file:list' => "elenco",
 	'file:group' => "File del gruppo",
-	'file:gallery' => "galleria",
-	'file:gallery_list' => "Galleria o elenco",
 	'file:num_files' => "Numero di file da visualizzare",
-	'file:user:gallery'=>'Guarda la galleria di %s',
 	'file:upload' => "Carica un file",
 	'file:replace' => 'Sostituisci il contenuto del file (lascia vuoto per non cambiare il file)',
 	'file:list:title' => "di %s %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Abilita file del gruppo',
 
-	'file:delete:confirm' => "Sei sicuro di voler cancellare questo file?",
-
-	'file:upload_limit' => 'Dimensione massima consentita del file %s',
-
-	'file:tagcloud' => "Tag",
-
-	'file:display:number' => "Numero di file da visualizzare",
-
-	'river:create:object:file' => '%s ha caricato il file %s',
-	'river:comment:object:file' => '%s ha commentato il file %s',
+	'river:object:file:create' => '%s ha caricato il file %s',
+	'river:object:file:comment' => '%s ha commentato il file %s',
 
 	'item:object:file' => 'File',
 
@@ -91,9 +80,7 @@ Visualizza e commenta il nuovo file:
 
 	'file:none' => "Nessun file caricato.",
 	'file:uploadfailed' => "Spiacenti; non siamo riusciti a salvare il tuo file.",
-	'file:downloadfailed' => "Spiacenti; questo file non è disponibile al momento.",
 	'file:deletefailed' => "Il tuo file non può essere rimosso in questo momento.",
 	'file:noaccess' => "Non hai il permesso di modificare questo file",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "Devi selezionare un file",
-];
+);

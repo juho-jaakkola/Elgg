@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Lisää tiedostoja",
 	'file:list' => "listanäkymä",
 	'file:group' => "Ryhmän tiedostot",
-	'file:gallery' => "gallerianäkymä",
-	'file:gallery_list' => "Galleria- tai listanäkymä",
 	'file:num_files' => "Näytettävien kohteiden määrä",
-	'file:user:gallery'=>'Näytä käyttäjän %s galleria',
 	'file:upload' => "Lisää uusi tiedosto",
 	'file:replace' => 'Korvaa tiedoston sisältö (jätä tyhjäksi säilyttääksesi nykyisen tiedoston)',
 	'file:list:title' => "%s's %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Ota käyttöön ryhmän tiedostot',
 
-	'file:delete:confirm' => "Haluatko varmasti poistaa tämän tiedoston?",
-
-	'file:upload_limit' => 'Suurin sallittu tiedostokoko: %s',
-
-	'file:tagcloud' => "Tagipilvi",
-
-	'file:display:number' => "Näytettävien kohteiden määrä",
-
-	'river:create:object:file' => '%s lisäsin tiedoston %s',
-	'river:comment:object:file' => '%s kommentoi tiedostoa %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Tiedostot',
 
@@ -92,9 +81,7 @@ Voit nähdä tiedoston täällä:
 
 	'file:none' => "Ei tiedostoja.",
 	'file:uploadfailed' => "Tiedoston tallentaminen epäonnistui.",
-	'file:downloadfailed' => "Tiedoston lataaminen epäonnistui.",
 	'file:deletefailed' => "Tiedoston poistaminen epäonnistui.",
 	'file:noaccess' => "Sinulla ei ole oikeuksia tämän tiedoston muuttamiseen",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "Sinun pitää valita tiedosto",
-];
+);

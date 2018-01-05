@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s päivitti %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'tilansa',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Tila päivitetty.",
 	'thewire:deleted' => "Tilapäivitys poistettu.",
 	'thewire:blank' => "Lisää jotakin sisältöä ennen tallennusta.",
-	'thewire:notfound' => "Hakemaasi tilapäivitystä ei löytynyt.",
 	'thewire:notsaved' => "Tilan tallentaminen epäonnistui.",
 	'thewire:notdeleted' => "Tilapäivituksen poistaminen epäonnistui.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Tilapäivityksen suurin sallittu merkkimäärä:",
 	'thewire:settings:limit:none' => "Ei rajaa",
-];
+);

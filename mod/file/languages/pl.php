@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Więcej plików",
 	'file:list' => "widok listy",
 	'file:group' => "Pliki w grupie",
-	'file:gallery' => "Widok galerii",
-	'file:gallery_list' => "Widok galerii lub listy",
 	'file:num_files' => "Liczba plików do wyświetlenia",
-	'file:user:gallery'=>'Wyświetl galerię użytkownika %s',
 	'file:upload' => "Wgraj plik",
 	'file:replace' => 'Zastąp zawartość pliku (pozostaw puste aby nie zmieniać pliku)',
 	'file:list:title' => "%s %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Włącz pliki grupy',
 
-	'file:delete:confirm' => "Czy na pewno chcesz usunąć ten plik?",
-
-	'file:upload_limit' => 'Maksymalny dozwolony rozmar pliku to %s',
-
-	'file:tagcloud' => "Chmura tagów",
-
-	'file:display:number' => "Liczba plików do wyświetlenia",
-
-	'river:create:object:file' => '%s wgrał nowy plik %s',
-	'river:comment:object:file' => '%s skomentował plik %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Pliki',
 
@@ -92,9 +81,7 @@ Zobacz i skomentuj nowy plik:
 
 	'file:none' => "Brak plików.",
 	'file:uploadfailed' => "Przykro nam, nie można było zapisać pliku.",
-	'file:downloadfailed' => "Przykro nam, ten plik nie jest dostępny w tej chwili.",
 	'file:deletefailed' => "Plik nie może być usunięty w tej chwili.",
 	'file:noaccess' => "Nie masz uprawnień do modyfikacji tego pliku",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "Musisz wskazać plik",
-];
+);

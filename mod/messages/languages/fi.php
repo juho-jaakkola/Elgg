@@ -1,30 +1,23 @@
 <?php
-return [
+return array(
 	/**
 	* Menu items and titles
 	*/
 
 	'messages' => "Viestit",
 	'messages:unreadcount' => "%s lukematonta",
-	'messages:back' => "takaisin viesteihin",
 	'messages:user' => "käyttäjän %s viestit",
-	'messages:posttitle' => "%s's messages: %s",
 	'messages:inbox' => "Saapuneet",
 	'messages:sent' => "Lähetetyt",
 	'messages:message' => "Viesti",
 	'messages:title' => "Aihe",
 	'messages:to:help' => "Kirjoita vastaanottajan nimi.",
-	'messages:replying' => "Message replying to",
 	'messages:inbox' => "Saapuneet",
 	'messages:sendmessage' => "Lähetä viesti",
 	'messages:add' => "Kirjoita uusi viesti",
 	'messages:sentmessages' => "Lähetetyt",
-	'messages:recent' => "Viimeisimmät viestit",
-	'messages:original' => "Alkuperäinen viesti",
-	'messages:yours' => "Sinun viestisi",
 	'messages:toggle' => 'Valitse kaikki',
 	'messages:markread' => 'Merkitse luetuksi',
-	'messages:recipient' => 'Choose a recipient&hellip;',
 	'messages:to_user' => 'Käyttäjälle: %s',
 
 	'messages:new' => 'Uusi viesti',
@@ -72,9 +65,6 @@ Tähän sähköpostiviestiin ei voi vastata.",
 	*/
 
 	'messages:blank' => "Syötä viestiin jotakin sisältöä ennen lähettämistä.",
-	'messages:notfound' => "Hakemaasi viestiä ei löytynyt.",
-	'messages:notdeleted' => "Viestin poistaminen epäonnistui.",
-	'messages:nopermission' => "Sinulla ei ole tarvittavia oikeuksia viestin muokkaamiseen.",
 	'messages:nomessages' => "Ei viestejä.",
 	'messages:user:nonexist' => "Valitsemaasi vastaanottajaa ei löytynyt käyttäjärekisteristä.",
 	'messages:user:blank' => "Et valinnut viestille vastaanottajaa.",
@@ -82,4 +72,4 @@ Tähän sähköpostiviestiin ei voi vastata.",
 
 	'messages:deleted_sender' => 'Poistettu käyttäjä',
 
-];
+);

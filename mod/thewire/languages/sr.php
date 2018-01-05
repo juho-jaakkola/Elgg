@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s објавио на %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'жица',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Ваша порука је успешно објављена на жици.",
 	'thewire:deleted' => "Објава је успешно обрисана",
 	'thewire:blank' => "Извините али морате да унесете текст пре него што објавите.",
-	'thewire:notfound' => "Извините, нисмо успели да пронађемо тражену објаву на жици.",
 	'thewire:notsaved' => "Ивините. Нисмо успли да сачувамо ову објаву.",
 	'thewire:notdeleted' => "Извините. Нисмо успели да обришемо ову објаву.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Максимални број знакова у објави на жици:",
 	'thewire:settings:limit:none' => "Без ограничења",
-];
+);

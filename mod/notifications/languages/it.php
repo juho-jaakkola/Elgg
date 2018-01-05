@@ -1,15 +1,12 @@
 <?php
 
-return [
-
-	'friends:all' => 'Tutti gli amici',
+return array(
 
 	'notifications:subscriptions:personal:description' => 'Ricevi una notifica quando una azione viene compiuta sul tuo profilo',
 	'notifications:subscriptions:personal:title' => 'Notifiche personali',
 
-	'notifications:subscriptions:friends:title' => 'Amici',
-	'notifications:subscriptions:friends:description' => 'In basso ci sono i tuoi gruppi di amici. Selezionando un gruppo attivi le notifiche da tutti i membri del gruppo',
-	'notifications:subscriptions:collections:edit' => 'Per modificare le tue liste di amici, clicca qui.',
+	'notifications:subscriptions:collections:friends' => 'Impostazioni da usare per i nuovi utenti che aggiungi tra gli amici',
+	'notifications:subscriptions:collections:custom' => 'Impostazioni da usare per i nuovi amici che aggiungi alla lista %s',
 
 	'notifications:subscriptions:changesettings' => 'Notifiche',
 	'notifications:subscriptions:changesettings:groups' => 'Notifiche dai gruppi',
@@ -21,4 +18,9 @@ return [
 
 	'notifications:subscriptions:success' => 'Le tue impostazioni di notifica sono state salvate.',
 
-];
+	'notifications:subscriptions:no_results' => 'Ancora non ci sono dati di sottoscrizione',
+	
+	'notifications:groups:subscribed' => 'Le notifiche del gruppo sono attive',
+	'notifications:groups:unsubscribed' => 'Le notifiche del gruppo sono disattivate',
+
+);

@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "もっとみる",
 	'file:list' => "リスト表示",
 	'file:group' => "グループファイル",
-	'file:gallery' => "ギャラリー表示",
-	'file:gallery_list' => "ギャラリー表示 or リスト表示",
 	'file:num_files' => "表示数",
-	'file:user:gallery'=>'%s さんのギャラリーをみる',
 	'file:upload' => "ファイルのアップロード",
 	'file:replace' => 'ファイルの置き換え(変更しない場合は空欄のまま)',
 	'file:list:title' => "%s さんの %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'グループファイルを使用する',
 
-	'file:delete:confirm' => "本当にこのファイルを削除しますか？",
-
-	'file:upload_limit' => 'ファイルの最大許容サイズは、 %s　です。',
-
-	'file:tagcloud' => "タグクラウド",
-
-	'file:display:number' => "表示数",
-
-	'river:create:object:file' => '%s さんがファイル「 %s 」をアップロードしました',
-	'river:comment:object:file' => '%s さんがファイル「 %s 」にコメントしました',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'ファイル',
 
@@ -92,9 +81,7 @@ return [
 
 	'file:none' => "ファイルがありません。",
 	'file:uploadfailed' => "申し訳ありません。ファイルを保存できません。",
-	'file:downloadfailed' => "申し訳ありません。今、このファイルは利用できません。",
 	'file:deletefailed' => "今、このファイルは削除できません。",
 	'file:noaccess' => "あなたには、このファイルを変更する権限がありません。",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "ファイルを選択して下さい。",
-];
+);

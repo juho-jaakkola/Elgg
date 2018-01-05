@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s ha postato su %s",
+	'river:object:thewire:create' => "%s ha postato su %s",
 	'thewire:wire' => 'aggiornamento di stato',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Il tuo messaggio è stato correttamente pubblicato in Aggiornamenti di stato.",
 	'thewire:deleted' => "Il tuo messaggio è stato correttamente cancellato.",
 	'thewire:blank' => "Spiacenti: devi scrivere qualcosa prima di poter salvare.",
-	'thewire:notfound' => "Spiacenti: non abbiamo trovato il messaggio cercato.",
 	'thewire:notsaved' => "Spiacenti, non abbiamo potuto salvare questo aggiornamento di stato",
 	'thewire:notdeleted' => "Spiacenti: non possiamo eliminare questo messaggio.",
 
@@ -56,4 +55,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Numero massimo di caratteri per gli aggiornamenti di stato:",
 	'thewire:settings:limit:none' => "Nessun limite",
-];
+);

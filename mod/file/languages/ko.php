@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "파일 더보기",
 	'file:list' => "목록보기",
 	'file:group' => "모둠 파일",
-	'file:gallery' => "사진첩 보기",
-	'file:gallery_list' => "사진첩 혹은 목록 보기",
 	'file:num_files' => "표시할 파일의 수",
-	'file:user:gallery'=>'%s의 사진첩 보기',
 	'file:upload' => "파일 올리기",
 	'file:replace' => '파일 내용 대체하기(파일을 바꾸지 않으려면 공백으로 두세요)',
 	'file:list:title' => "%s의 %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => '모둠 파일 활성화',
 
-	'file:delete:confirm' => "정말 이 파일을 지우겠습니까?",
-
-	'file:upload_limit' => '파일의 허용된 최대 크기는 %s 입니다.',
-
-	'file:tagcloud' => "꼬리표 모음",
-
-	'file:display:number' => "표시할 파일의 수",
-
-	'river:create:object:file' => '%%s가 올린 파일 %s',
-	'river:comment:object:file' => '%s가 파일 %s에 댓글을 남겼습니다.',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => '파일들',
 
@@ -92,9 +81,7 @@ return [
 
 	'file:none' => "파일 없슴.",
 	'file:uploadfailed' => "죄송합니다. 파일을 저장할 수 없었습니다.",
-	'file:downloadfailed' => "죄송합니다. 지금은 파일을 사용할 수 없습니다.",
 	'file:deletefailed' => "지금 파일을 삭제할 수 없었습니다.",
 	'file:noaccess' => "이 파일을 변경할 권한이 없습니다.",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "파일을 선택해야합니다.",
-];
+);

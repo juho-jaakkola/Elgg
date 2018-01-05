@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => '블로그',
 	'blog:blogs' => '블로그',
 	'blog:revisions' => '개정',
@@ -22,7 +22,7 @@ return [
 	'blog:excerpt' => '요약',
 	'blog:body' => '본문',
 	'blog:save_status' => '마지막 저장:',
-	
+
 	'blog:revision' => '개정',
 	'blog:auto_saved_revision' => '자동저장',
 
@@ -43,8 +43,8 @@ return [
 	'blog:error:revision_not_found' => '이전판을 찾을 수 없습니다. ',
 
 	// river
-	'river:create:object:blog' => '%s 가 %s 글을 작성하였습니다.',
-	'river:comment:object:blog' => '%s 가 블로그 %s 에 댓글을 남겼습니다. ',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => '새 블로그 글이 %s 를 언급하였습니다. ',
@@ -63,5 +63,5 @@ return [
 	'blog:widget:description' => '최신의 블로그글을 표시합니다.',
 	'blog:moreblogs' => '블로그글 더보기',
 	'blog:numbertodisplay' => '출력할 블로그글의 수',
-	'blog:noblogs' => '블로그글이 없습니다.'
-];
+	'blog:noblogs' => '블로그글이 없습니다.',
+);

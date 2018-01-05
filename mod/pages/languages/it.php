@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -20,8 +20,6 @@ return [
 	'pages:history' => "Cronologia della pagina",
 	'pages:view' => "Visualizza pagina",
 	'pages:revision' => "Revisione",
-	'pages:current_revision' => "Revisione attuale",
-	'pages:revert' => "Ritorna",
 
 	'pages:navigation' => "Navigazione della pagina",
 
@@ -34,9 +32,7 @@ return [
 
 Visualizza e commenta questa pagina:
 %s',
-	'item:object:page_top' => 'Pagine di primo livello',
 	'item:object:page' => 'Pagine',
-	'pages:nogroup' => 'Questo gruppo non ha ancora nessuna pagina',
 	'pages:more' => 'Tutte le pagine',
 	'pages:none' => 'Ancora nessuna pagina creata',
 
@@ -44,13 +40,10 @@ Visualizza e commenta questa pagina:
 	* River
 	**/
 
-	'river:create:object:page' => '%s ha creato la pagina %s',
-	'river:create:object:page_top' => '%s ha creato la pagina %s',
-	'river:update:object:page' => '%s ha aggiornato la pagina %s',
-	'river:update:object:page_top' => '%s ha aggiornato la pagina %s',
-	'river:comment:object:page' => '%s ha commentato la pagina %s',
-	'river:comment:object:page_top' => '%s ha commentato la pagina %s',
-
+	'river:object:page:create' => '%s ha creato la pagina %s',
+	'river:object:page:update' => '%s ha aggiornato la pagina %s',
+	'river:object:page:comment' => '%s ha commentato la pagina dal titolo %s',
+	
 	/**
 	 * Form fields
 	 */
@@ -65,7 +58,6 @@ Visualizza e commenta questa pagina:
 	/**
 	 * Status and error messages
 	 */
-	'pages:noaccess' => 'Non hai accesso a questa pagina',
 	'pages:cantedit' => 'Non puoi modificare questa pagina',
 	'pages:saved' => 'Pagina salvata',
 	'pages:notsaved' => 'La pagina non può essare salvata',
@@ -74,12 +66,6 @@ Visualizza e commenta questa pagina:
 	'pages:delete:failure' => 'La pagina non può rimossa.',
 	'pages:revision:delete:success' => 'Revisione pagina cancellata con successo',
 	'pages:revision:delete:failure' => 'La revisione della pagina non è stata cancellata',
-	'pages:revision:not_found' => 'Impossibile trovare questa revisione',
-
-	/**
-	 * Page
-	 */
-	'pages:strapline' => 'Ultimo aggiornamento %s di %s',
 
 	/**
 	 * History
@@ -100,13 +86,14 @@ Visualizza e commenta questa pagina:
 	'pages:label:edit' => "Modifica pagina",
 	'pages:label:history' => "Cronologia della pagina",
 
-	/**
-	 * Sidebar items
-	 */
-	'pages:sidebar:this' => "Questa pagina",
-	'pages:sidebar:children' => "Sotto-pagine",
-	'pages:sidebar:parent' => "Su di un livello",
-
 	'pages:newchild' => "Crea una sotto-pagina",
-	'pages:backtoparent' => "Torna a '%s'",
-];
+	
+	/**
+	 * Upgrades
+	 */
+	'pages:upgrade:2017110700:title' => "Migra page_top a page entities",
+	'pages:upgrade:2017110700:description' => "Cambia il sottotipo di tutte le 'pagine top' in 'pagina' e imposta i metadati per assicurare un'elencazione corretta.",
+	
+	'pages:upgrade:2017110701:title' => "Migra gli inserimenti sul river delle page_top",
+	'pages:upgrade:2017110701:description' => "Cambia il sottotipo di tutti gli elementi del river per le 'Pagine top' in 'pagina'",
+);

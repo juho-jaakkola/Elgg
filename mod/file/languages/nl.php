@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Meer bestanden",
 	'file:list' => "lijstweergave",
 	'file:group' => "Groepsbestanden",
-	'file:gallery' => "galerijweergave",
-	'file:gallery_list' => "Galerij- of lijstweergave",
 	'file:num_files' => "Aantal bestanden om weer te geven",
-	'file:user:gallery'=>'Bekijk de galerij van %s',
 	'file:upload' => "Upload een bestand",
 	'file:replace' => 'Vervang bestandsinhoud (laat dit leeg om het bestand <em>niet</em> te vervangen)',
 	'file:list:title' => "Van %s: %s en %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Activeer groepsbestanden',
 
-	'file:delete:confirm' => "Weet je zeken dat je dit bestand wilt verwijderen?",
-
-	'file:upload_limit' => 'Maximaal toegestane bestandsgrootte is %s',
-
-	'file:tagcloud' => "Tag-cloud",
-
-	'file:display:number' => "Aantal bestanden om weer te geven",
-
-	'river:create:object:file' => '%s heeft het bestand %s geüpload',
-	'river:comment:object:file' => '%s reageerde op het bestand %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Bestanden',
 
@@ -99,9 +88,7 @@ Dit is een automatisch aangemaakt bericht. Je kunt hier niet op reageren.
 
 	'file:none' => "We konden op dit moment geen bestanden vinden.",
 	'file:uploadfailed' => "Sorry, we konden het bestand niet opslaan.",
-	'file:downloadfailed' => "Sorry, dit bestand is op dit moment niet beschikbaar.",
 	'file:deletefailed' => "Je bestand kon op dit moment niet worden verwijderd.",
 	'file:noaccess' => "Je hebt onvoldoende rechten om dit bestand aan te passen",
 	'file:cannotload' => "Er was een fout tijdens het uploaden van het bestand",
-	'file:nofile' => "Selecteer een bestand",
-];
+);

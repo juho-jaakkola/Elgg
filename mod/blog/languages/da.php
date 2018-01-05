@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Blogs',
 	'blog:blogs' => 'Blogs',
 	'blog:revisions' => 'Revision',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Uddrag',
 	'blog:body' => 'Brødtekst',
 	'blog:save_status' => 'Sidst gemt: ',
-	
+
 	'blog:revision' => 'Revision',
 	'blog:auto_saved_revision' => 'Auto gemt revision',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Kan ikke finde denne revision.',
 
 	// river
-	'river:create:object:blog' => '%s har offentliggjort et blogindlæg %s',
-	'river:comment:object:blog' => '%s har kommenteret et blogindlæg %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Nyt blog indlæg kaldt %s',
@@ -62,5 +62,5 @@ Se og kommenter på det nye blog indlæg:
 	'blog:widget:description' => 'Vis dit seneste blogindlæg',
 	'blog:moreblogs' => 'Flere blogindlæg',
 	'blog:numbertodisplay' => 'Antal af blogindlæg, der skal vises',
-	'blog:noblogs' => 'Ingen blogindlæg'
-];
+	'blog:noblogs' => 'Ingen blogindlæg',
+);

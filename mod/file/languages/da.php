@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -12,10 +12,7 @@ return [
 	'file:more' => "Flere filer",
 	'file:list' => "Liste",
 	'file:group' => "Gruppe filer",
-	'file:gallery' => "Galleri",
-	'file:gallery_list' => "Vis som liste eller galleri",
 	'file:num_files' => "Antal viste filer",
-	'file:user:gallery'=>'Se %s galleri',
 	'file:upload' => "Upload en fil",
 	'file:replace' => 'Erstat fil indhold (lad være tom for ikke at ændre i fil)',
 	'file:list:title' => "%s's %s %s",
@@ -55,16 +52,8 @@ return [
 
 	'groups:enablefiles' => 'Aktiver gruppefiler',
 
-	'file:delete:confirm' => "Er du sikker på, at du vil slette denne fil?",
-
-	'file:upload_limit' => 'Maximum allowed file size is %s',
-
-	'file:tagcloud' => "Tag cloud",
-
-	'file:display:number' => "Antal viste filer",
-
-	'river:create:object:file' => '%s tilføjede filen %s',
-	'river:comment:object:file' => '%s kommenterede filen %s',
+	'river:object:file:create' => '%s uploaded the file %s',
+	'river:object:file:comment' => '%s commented on the file %s',
 
 	'item:object:file' => 'Filer',
 
@@ -92,9 +81,7 @@ See og kommenter på filen:
 
 	'file:none' => "Vi kan ikke finde nogle filer i øjeblikket",
 	'file:uploadfailed' => "Beklager, vi kunne ikke gemme din fil.",
-	'file:downloadfailed' => "Beklager, denne fil er ikke til rådighed lige nu.",
 	'file:deletefailed' => "Din fil kunne ikke slettes.",
 	'file:noaccess' => "Du har ikke tilladelse ti at ændre denne fil",
 	'file:cannotload' => "There was an error uploading the file",
-	'file:nofile' => "Du skal vælge en fil",
-];
+);

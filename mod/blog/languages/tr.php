@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Bloglar',
 	'blog:blogs' => 'Bloglar',
 	'blog:revisions' => 'Düzeltmeler',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Alıntı',
 	'blog:body' => 'Gövde',
 	'blog:save_status' => 'Son kayıt:',
-	
+
 	'blog:revision' => 'Düzeltme',
 	'blog:auto_saved_revision' => 'Otomatik Kaydedilmiş Düzeltme',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Bu düzeltme bulunamadı.',
 
 	// river
-	'river:create:object:blog' => '%s bir blog gönderisi yayımladı %s',
-	'river:comment:object:blog' => '%s bloga yorum yaptı %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => '%s adında yeni bir blog gönderisi',
@@ -62,5 +62,5 @@ Blog gönderisini görüntüle ve yorum yap:
 	'blog:widget:description' => 'Son blog gönderilerinizi göster',
 	'blog:moreblogs' => 'Daha fazla blog gönderisi',
 	'blog:numbertodisplay' => 'Gösterilecek blog gönderisi sayısı',
-	'blog:noblogs' => 'Blog gönderisi yok'
-];
+	'blog:noblogs' => 'Blog gönderisi yok',
+);

@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,7 @@ return [
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s сделал(а) запись в %s",
+	'river:object:thewire:create' => "%s posted to %s",
 	'thewire:wire' => 'микроблог',
 
 	/**
@@ -37,7 +37,6 @@ return [
 	'thewire:posted' => "Запись добавлена.",
 	'thewire:deleted' => "Запись удалена.",
 	'thewire:blank' => "Ну ты же ничего не ввел дружище.",
-	'thewire:notfound' => "Не могу найти эту запись.",
 	'thewire:notsaved' => "Не могу сохранить запись.",
 	'thewire:notdeleted' => "Не могу удалить запись.",
 
@@ -55,4 +54,4 @@ return [
 	 */
 	'thewire:settings:limit' => "Максимальное количество символов сообщения:",
 	'thewire:settings:limit:none' => "Без ограничения",
-];
+);

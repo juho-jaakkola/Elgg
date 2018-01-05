@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
 	'blog' => 'Blogit',
 	'blog:blogs' => 'Blogit',
 	'blog:revisions' => 'Versiot',
@@ -21,7 +21,7 @@ return [
 	'blog:excerpt' => 'Tiivistelmä',
 	'blog:body' => 'Viesti',
 	'blog:save_status' => 'Tallennettu viimeksi: ',
-	
+
 	'blog:revision' => 'Versio',
 	'blog:auto_saved_revision' => 'Versio  Auto Saved Revision',
 
@@ -42,8 +42,8 @@ return [
 	'blog:error:revision_not_found' => 'Versiota ei löydy.',
 
 	// river
-	'river:create:object:blog' => '%s julkaisi blogiviestin %s',
-	'river:comment:object:blog' => '%s kommentoi blogiviestiä %s',
+	'river:object:blog:create' => '%s published a blog post %s',
+	'river:object:blog:comment' => '%s commented on the blog %s',
 
 	// notifications
 	'blog:notify:summary' => 'Uusi blogiviesti %s',
@@ -62,5 +62,5 @@ Voit lukea blogikirjoituksen täällä:
 	'blog:widget:description' => 'Näytä viimeisimmät blogiviestisi',
 	'blog:moreblogs' => 'Lisää blogiviestejä',
 	'blog:numbertodisplay' => 'Näytettävien kohteiden määrä',
-	'blog:noblogs' => 'Ei blogiviestejä'
-];
+	'blog:noblogs' => 'Ei blogiviestejä',
+);
